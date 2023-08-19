@@ -1,0 +1,52 @@
+.num{
+    height: 45px;
+    width: 590px;
+    border-radius: 8px;
+    text-align: center;
+}
+.answer{
+    height: 30px;
+    width:400px;
+    text-align: center;
+    border: 2px solid black;
+    color: black;
+    padding: 30px 25px;
+    border-radius: 8px;
+    margin-top: 40px;
+    margin-left: 62px;
+}
+.main{
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+    border: 5px solid red;
+    padding: 50px;
+    background: dimgrey;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    height: 30px;
+    width: 90px;
+    background: red;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.btn:hover{
+    background: rgb(68, 68, 255);
+
+}
+.btn:focus{
+    height: 30px;
+    width: 90px;
+    background: rgb(3, 138, 12);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;	
+}

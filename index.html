@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewprt" content="width=device-width initial-scale= 1">
+	<title>CALCULATOR</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="javascript" type="text/javascript" href="javascript.js" />
+</head>
+<body><h1 align="center">CALCULATOR</h1>
+<div class="back">
+		<div class="main">
+	       <input type="number" class="num" id="a" placeholder="VALUE A" onkeyup="num1(this.value)">
+	        <script type="text/javascript">
+	 	
+	        	function num1(x){
+               
+				}
+		
+	        </script>
+<br><br>
+	       <input type="number" class="num" id="b" placeholder="VALUE B" onkeyup="num2(this.value)">
+	        <script type="text/javascript">
+	
+	        	function num2(x){       
+		          
+				}
+		
+	        </script>
+<br><br>
+<div class="buttons">
+	<button class="btn" onclick="add()">ADD</button>
+	<button class="btn"  onclick="sub()">SUBTRACT</button>
+	<button class="btn"  onclick="mul()"> MULTIPLY</button>
+    <button class="btn"  onclick="div()">DIVIDE</button>
+</div>
+<script type="text/javascript">
+		
+    function add () {
+                var a1=  document.getElementById('a');
+                var z= Number(a1.value);
+                var b1 = document.getElementById('b');
+                var y= Number(b1.value);
+                formula=(z+y);
+                document.getElementById('ans').innerHTML=formula;
+            }
+    function sub () {
+                var a1=  document.getElementById('a');
+                var z= Number(a1.value);
+                var b1 = document.getElementById('b');
+                var y= Number(b1.value);
+                formula=(z-y);
+                document.getElementById('ans').innerHTML=formula;
+            }
+    function mul () {
+                var a1=  document.getElementById('a');
+                var z= Number(a1.value);
+                var b1 = document.getElementById('b');
+                var y= Number(b1.value);
+                formula=(z*y);
+                document.getElementById('ans').innerHTML=formula;   
+            }
+    function div () {
+                var a1=  document.getElementById('a');
+                var z= Number(a1.value);
+                var b1 = document.getElementById('b');
+                var y= Number(b1.value);
+                formula=(z/y);
+                document.getElementById('ans').innerHTML=formula;     
+            }
+    
+    </script>
+<h3 class="answer" id="ans">ANSWER</h3>
+</div>
+</div>
+</body>
+</html>
